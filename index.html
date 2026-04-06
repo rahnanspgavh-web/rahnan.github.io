@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GP Spiritual Hub | Spiritual Knowledge & Inner Peace</title>
+
+<meta name="description" content="GP Spiritual Hub offers spiritual wisdom, meditation guidance, and inner peace for a better life.">
+<meta name="keywords" content="spiritual, meditation, peace, mindfulness, life guidance, inner peace">
+
+<!-- GOOGLE VERIFICATION -->
+<meta name="google-site-verification" content="lqNaE-xhfqn7H__4XJm2N-QDlq8sz6WADygT2pV6efU" />
+
+<meta property="og:title" content="GP Spiritual Hub">
+<meta property="og:description" content="Spiritual wisdom and inner peace guidance">
+<meta property="og:type" content="website">
+
+<style>
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff5e6, #ffffff);
+}
+
+header {
+  background: linear-gradient(90deg, #ff7a18, #ffb347);
+  color:white;
+  padding:18px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.menu {
+  display:flex;
+  justify-content:space-around;
+  background:#222;
+  padding:12px;
+}
+
+.menu a {
+  color:white;
+  text-decoration:none;
+}
+
+.container {
+  padding:15px;
+}
+
+.card {
+  background:white;
+  padding:18px;
+  margin-bottom:15px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.read-btn {
+  margin-top:10px;
+  padding:8px 12px;
+  background:#ff7a18;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.share a {
+  margin-right:10px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.floating {
+  position:fixed;
+  bottom:20px;
+  right:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.floating a {
+  background:#ff7a18;
+  color:white;
+  padding:12px;
+  border-radius:50%;
+  text-align:center;
+  font-size:18px;
+  text-decoration:none;
+}
+
+footer {
+  text-align:center;
+  padding:15px;
+  background:#111;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>✨ GP Spiritual Hub</header>
+
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">Meditation</a>
+  <a href="#">Wisdom</a>
+  <a href="#">Life</a>
+</div>
+
+<div class="container" id="articles"></div>
+
+<footer>
+Follow Us<br><br>
+
+<a href="https://www.youtube.com/@Spgavh">YouTube</a> |
+<a href="https://www.instagram.com/gpspiritualhub830531">Instagram</a> |
+<a href="https://www.facebook.com/profile.php?id=61573359535287">Facebook</a> |
+<a href="https://x.com/rahnan310583">X</a>
+
+<p>© 2026 GP Spiritual Hub</p>
+</footer>
+
+<div class="floating">
+  <a href="https://www.youtube.com/@Spgavh">▶</a>
+  <a href="https://www.instagram.com/gpspiritualhub830531">📸</a>
+  <a href="https://www.facebook.com/profile.php?id=61573359535287">📘</a>
+  <a href="https://x.com/rahnan310583">𝕏</a>
+</div>
+
+<script>
+
+const articles = [
+"Power of Inner Peace","Daily Meditation Benefits","Control Your Mind",
+"Positive Energy Secrets","Spiritual Awakening","Law of Attraction",
+"Mindfulness Life","Remove Negativity","Power of Silence","Gratitude",
+"Stay Calm","Universe Energy","Meditation Techniques","Focus Tips",
+"Deep Breathing","Present Moment","Understanding Karma","Let Go Stress",
+"Spiritual Growth","Positive Thinking"
+];
+
+let html = "";
+
+articles.forEach((title) => {
+
+let url = encodeURIComponent(window.location.href);
+
+html += `
+<div class="card">
+<h3>${title}</h3>
+<p>Learn about ${title.toLowerCase()} and improve your life.</p>
+
+<a class="read-btn" href="#">Read More</a>
+
+<div class="share">
+<br>
+Share:
+<a href="https://wa.me/?text=${title} ${url}">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=${url}">Facebook</a>
+<a href="https://twitter.com/intent/tweet?text=${title}&url=${url}">X</a>
+</div>
+
+</div>`;
+});
+
+document.getElementById("articles").innerHTML = html;
+
+</script>
+
+</body>
+</html>
